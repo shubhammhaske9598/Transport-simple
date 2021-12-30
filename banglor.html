@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.css"/>
+	 
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.3/datatables.min.js"></script>
+
+
+  <style type="text/css">
+  </style>
+</head>
+<body style="background-color: lavender;">
+<div class="container-fluid bg-primary">
+	<div class="row p-4 border border-dark">
+		<div class="col-md-2"></div>
+
+		<div class="col-md-6 col-6">
+<img src="C:\Users\Shubham\Desktop\download.png" style="position: absolute;left: -220px;background-color: white;">
+           
+            <input class="form-control mr-sm-2 border border-dark  d-none d-md-block w-50%" type="search" placeholder="Search" aria-label="Search">
+
+		</div>
+		<div class="col-md-4 col-4 text-lg-right">
+        <i class="fa fa-bell h2 mr-5" style="font-size: 30px;"></i>
+        
+        <i class="fas fa-user-circle mr-4 " style="font-size: 40px;"></i>
+        simple transport
+        <i class="fa fa-angle-down"></i>			
+		</div>
+	</div>
+</div>
+<div class="container-fluid bg-white">
+	<div class="row">
+		<div class="col-md-12  d-none d-md-block" id="nav_menu">
+			<div class="row p-2  border-top-0 justify-content-right">
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-cog"></i>
+					<span>Main </span>
+				</div>
+				<div class="col-md-1 p-1 ml-4 active-menu">
+					<i class="fas fa-rocket"></i>
+					<span>Main 2 </span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-cog"></i>
+					<span>Main 3</span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-rupee-sign"></i>
+					<span>Main 4</span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-file-alt"></i>
+					<span>Main 5</span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-toolbox"></i>
+					<span>Main 6</span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-bullseye"></i>
+					<span>Main 7</span>
+				</div>
+				<div class="col-md-1 p-1 ml-4">
+					<i class="fas fa-calculator"></i>
+					<span>Main 8</span>
+					<i class="fa fa-angle-down" ></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<h1 class=" mt-2 mb-2">
+		Summary 
+		<div class="d-inline-block float-right w-25" style="position: relative;">
+			<input type="text" name="" class="form-control" value="12 JUNE 2018-12 JULY 2018" >
+			<i class="fa fa-calendar" style="position: absolute;right: 10px;top: 8px;font-size: 20px;"></i>
+		</div>
+	</h1>
+	<div class="row shadow bg-white pt-3 pb-3">
+		<div class="col-md-4" style="line-height: 250%;">
+		Acc. No.: <b>1234567890QWERTY</b><br>
+		Acc. Holder.: <b>Jasdeep Singh</b><br>
+		Bank : <b>HDFC Bank</b><br>
+
+		</div>
+		<div class="col-md-4" style="line-height: 250%;">
+		Branch: <b>Kasturi Nagar Branch</b><br>
+		IFSC.: <b>HDFC12345</b><br>
+		</div>
+		<div class="col-md-4" style="line-height: 250%;">
+		<div class="btn btn-primary">active</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row pt-3 pb-3 text-white" >
+		<div class="col-md-4  position-relative">
+			<div class="alert bg-primary ">
+					Begining Balance<br>
+					<h5 class="pt-0 pb-0 mb-0">Rs.20,000</h5>
+					<i class="far fa-money-bill-alt" style="position: absolute;right: 30px;top: 25px;font-size: 30px;"></i></h5>
+			</div>
+		</div>
+		<div class="col-md-4 ">
+			<div class="alert bg-danger">
+				<div class="row">
+					<div class="col-6">
+						Going in<br>
+						<h5 class="pt-0 pb-0 mb-0">Rs.20,000</h5>
+						<i class="far fa-money-bill-alt" style="position: absolute;right: 15px;top: 10px;font-size: 30px;"></i></h5>
+					</div>
+					<div class="col-6" style="border-left: 1px solid white;">
+						Going Out<br>
+						<h5 class="pt-0 pb-0 mb-0">Rs.20,000</h5>
+						<i class="far fa-money-bill-alt" style="position: absolute;right: 15px;top: 10px;font-size: 30px;"></i></h5>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 position-relative">
+			<div class="alert" style="background-color: orange;">
+					Ending Balance<br>
+					<h5 class="pt-0 pb-0 mb-0 d-inline-block">Rs.20,000</h5>
+					<i class="far fa-money-bill-alt" style="position: absolute;right: 30px;top: 25px;font-size: 30px;"></i></h5>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container bg-white shadow">
+	<div class="row">
+		<div class="col-md-6 text-capitalize p-3">
+			Cash summery
+		</div>
+
+		<div class="col-md-6 text-right p-3">
+			<select class="form-control w-25 d-inline-block ml-3">
+				<option>April</option>
+			</select>
+			<select class="form-control w-25 d-inline-block ml-3">
+				<option>Week</option>
+			</select>
+			<i class="far fa-ellipsis-v"></i>
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<div style="display: inline-block; height: 15px;width: 15px;border-radius: 50%;background-color:red">
+				
+			</div>
+			Values April
+		</div>
+			
+			<div class="col-md-2">
+			<div style="display: inline-block; height: 15px;width: 15px;border-radius: 50%;background-color:orange">
+				
+			</div>
+			Values April
+		</div>
+	</div>
+	<div class="row">
+		<div col-md-12>
+			<img src="file:///C:/Users/Shubham/Downloads/Bitmap.png" width="100%">
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+	<div class="row">
+		<div class="col-md-12" >
+			<div class="row justify-content-center text-capitalize" style="">
+				<div class="col-md-2">trasction</div>
+				<div class="col-md-1">all</div>
+				<div class="col-md-1">deposite</div>
+				<div class="col-md-1">widrawal</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: -25px;">
+		<div class="col-md-12">
+			<table class=" table table-bordered bg-white shadow m-2 myTable">
+				<thead>
+						<tr>
+							<th> DATE<i class="fas fa-sort-amount-down ml-5"></i></th>
+							<th>TRANSITIONAL DETAIL <i class="fas fa-sort-amount-down ml-5"></i></th>
+							<th>WITHDRAWAL <i class="fas fa-sort-amount-down ml-5"></i></th>
+							<th>DEPOSITE <i class="fas fa-sort-amount-down ml-5"></i></th>
+							<th>RUNNING BALANCE <i class="fas fa-sort-amount-down ml-5"></i></th>
+						</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>01/19/2018</td>
+						<td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+						<td>₹5,000</td>
+						<td>₹5,000</td>
+						<td>₹5,000
+							<i class="far fa-ellipsis-v float-right"></i></td>
+
+					</tr>
+					<tr>
+						<td>01/19/2018</td>
+						<td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+						<td>₹5,000</td>
+						<td>₹5,000</td>
+						<td>₹5,000
+						<i class="far fa-ellipsis-v float-right"></i></td>
+
+					</tr>
+					<tr>
+						<td>01/19/2018</td>
+						<td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+						<td>₹5,000</td>
+						<td>₹5,000</td>
+						<td>₹5,000
+						<i class="far fa-ellipsis-v float-right"></i></td>
+
+					</tr>
+					<tr>
+						<td>01/19/2018</td>
+						<td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+						<td>₹5,000</td>
+						<td>₹5,000</td>
+						<td>₹5,000
+						<i class="far fa-ellipsis-v float-right"></i></td>
+
+					</tr>
+					<tr>
+						<td>01/19/2018</td>
+						<td>IIN/I-Debit/Citrus pa/xxxxxxxx93711</td>
+						<td>₹5,000</td>
+						<td>₹5,000</td>
+						<td>₹5,000
+						<i class="far fa-ellipsis-v float-right"></i></td>
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<br><br><br>
+	<div class="container">
+		<table class="table table-bordered bg-white">
+			<thead>
+				<tr>
+					<th style="font-size: 14px;">SELECT</th>
+					<th style="font-size: 14px;">DATE OF BILL</th>
+					<th style="font-size: 14px;">BILL NO</th>
+					<th style="font-size: 14px;">DUE DATE</th>
+					<th style="font-size: 14px;">BILL AMOUNT</th>
+					<th style="font-size: 14px;">AMMOUNT DEU</th>
+					<th style="font-size: 14px;">ADJUSTMENT</th>
+					<th style="font-size: 14px;">WITHHOLD</th>
+					<th style="font-size: 14px;">BALANCE</th>
+					<th style="font-size: 14px;">AMOUNT PAID</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="checkbox" name="" style="width: 20px"></td>
+					<td>01/19/2018</td>
+					<td>123456789</td>
+					<td>01/19/2018</td>
+					<td>5000</td>
+					<td>5000</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><input type="" name="" value="1000" style="width: 50px"></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="" style="width: 20px"></td>
+					<td>01/19/2018</td>
+					<td>123456789</td>
+					<td>01/19/2018</td>
+					<td>5000</td>
+					<td>5000</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><input type="" name="" value="1000" style="width: 50px"></td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox" name="" style="width: 20px"></td>
+					<td>01/19/2018</td>
+					<td>123456789</td>
+					<td>01/19/2018</td>
+					<td>5000</td>
+					<td>5000</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><input type="" name="" value="1000" style="width: 50px"></td>
+				</tr>
+
+				<tr>
+					<td><input type="checkbox" name="" style="width: 20px"></td>
+					<td>01/19/2018</td>
+					<td>123456789</td>
+					<td>01/19/2018</td>
+					<td>5000</td>
+					<td>5000</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td><input type="" name="" value="1000" style="width: 50px"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div col-md-12>
+				<div class="btn btn-white border-dark pl-5 pr-5">Back</div>
+			</div>
+		</div>
+	</div>
+<br>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<script type="text/javascript">
+	$(document).ready( function () {
+    	$('.myTable').DataTable();
+	} );
+</script>
+  	</body>
+</html>
